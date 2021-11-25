@@ -1,5 +1,5 @@
 import java.util.*;
-public class MinAndMax{
+public class ReverseArr{
 public static void main(String[] args){
 Scanner sc=new Scanner(System.in);
 int[] arr= new int[5];  
@@ -15,23 +15,11 @@ for (int i=0; i<arr.length; i++)
 {  
 System.out.println(arr[i]);  
 }
-int max=arr[0],min=arr[0];
-for(int i=0;i<arr.length;i++)
+System.out.println("reverse array");
+for(int i=arr.length-1;i>=0;i--)
 {
-if(arr[i]>max)
-{
-max=arr[i];
+System.out.println(arr[i]);
 }
-
-}
-System.out.println("max value in the array is"+max);
-for(int i=0;i<arr.length;i++){
-if(arr[i]<min)
-{
-min=arr[i];
-}
-}
-
-System.out.println("min value in the array is:"+min);
-}
+  
+}  
 }
