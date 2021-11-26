@@ -1,12 +1,20 @@
-import java.util.*;
-class Department{
-private int did;
-private String dname;
-private String dhead;
-void display(int did,String dname,String dhead)
+public class Department
 {
-System.out.println("Department id is:"+did);
-System.out.println("Department name is:"+dname);
-System.out.println("Department head is:"+dhead);
-}
+  
+	private int deptId;
+	private String deptName;
+	private String deptHead;
+	
+	public Department(int deptId, String deptName,String deptHead)
+	{
+	  this.deptId=deptId;
+	  this.deptName=deptName;
+	  this.deptHead=deptHead;
+	}
+	public String toString()
+	{
+		return "DepartId: "+deptId+
+				"\nDepartmentName: "+deptName+
+				"\nDepartmentHead: "+deptHead+"";
+	}
 }

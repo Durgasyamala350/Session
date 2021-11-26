@@ -1,14 +1,26 @@
-class Employee{
-private int eid;
-private String ename;
-private float esalary;
-private Department edname;
-
-void show(int eid,String ename,float esalary,Department edname)
+public class Employee
 {
-System.out.println("Employee id is:"+eid);
-System.out.println("Employee name is:"+ename);
-System.out.println("Employee salary is:"+esalary);
-System.out.println("Employee department detalis are id is :"+did+"name is"+dname+"head is"+dhead);
-}
+	
+	private int empId;
+	private String empName;
+	private double empSal;
+	private Department empDept;
+	
+	public Employee(int empId,String empName,double empSal,Department empDept)
+	{
+		this.empId=empId;
+		this.empName=empName;
+		this.empSal=empSal;
+		this.empDept=empDept;
+	}
+	public String toString()
+	{
+		return  "Id : "+empId+
+				"\nName: "+empName+
+				"\nSalary Rs: "+empSal+
+				"\n"+empDept;
+	}
+	
+
+
 }
