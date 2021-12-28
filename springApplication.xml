@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+https://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id ="book" name="book1" class="springDemo.Book" scope="prototype"></bean>
+<bean id ="booklibrary" name="lib1" class="springDemo.BookLibrary" scope="prototype"></bean>
+<bean id ="libCat" name="libCat1" class="springDemo.LibraryCat" scope="prototype"></bean>
+<bean id ="libra" name="libra1" class="springDemo.Librarian" scope="prototype"></bean>
+
+</beans>
